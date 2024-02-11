@@ -1,0 +1,38 @@
+class Producto:
+    def __init__(self, id, nombre, cantidad, precio):
+        self.__id = id
+        self.__nombre = nombre
+        self.__cantidad = cantidad
+        self.__precio = precio
+
+    def get_id(self):
+        return self.__id
+
+    def set_id(self, id):
+        self.__id = id
+
+    def get_nombre(self):
+        return self.__nombre
+
+    def set_nombre(self, nombre):
+        self.__nombre = nombre
+
+    def get_cantidad(self):
+        return self.__cantidad
+
+    def set_cantidad(self, cantidad):
+        self.__cantidad = cantidad
+
+    def get_precio(self):
+        return self.__precio
+
+    def set_precio(self, precio):
+        self.__precio = precio
+
+    def __str__(self):
+        return f"ID: {self.__id}, Nombre: {self.__nombre}, Cantidad: {self.__cantidad}, Precio: {self.__precio}"
+    
+#la clase Producto está diseñada para encapsular la información de cada producto en el inventario de la tienda y 
+# proporcionar métodos para acceder y modificar esta información de manera segura y controlada. 
+# Se utilizan getters y setters para acceder a los atributos privados y se proporciona una representación de 
+# cadena para facilitar la visualización de la información del producto.
